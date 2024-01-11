@@ -156,3 +156,8 @@ function typewrite() {
     document.body.appendChild(css);
 };
 window.onload(typewrite());
+
+window.onload = function() {
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+}
